@@ -151,10 +151,10 @@ if (window.gsap) {
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
   const material = new THREE.PointsMaterial({
-    size: 0.028,
-    color: 0xcfd8cf,
+    size: 0.032,
+    color: 0x5c6b5c,
     transparent: true,
-    opacity: 0.75,
+    opacity: 0.55,
     sizeAttenuation: true,
     depthWrite: false,
   });
@@ -255,9 +255,9 @@ if (window.gsap) {
 
   const sheetGeo = new THREE.PlaneGeometry(2.4, 2.4, 24, 24);
   const sheetMat = new THREE.MeshStandardMaterial({
-    color: 0xe7e1d6,
+    color: 0x8a8171,
     roughness: 0.55,
-    metalness: 0.1,
+    metalness: 0.05,
     side: THREE.DoubleSide,
     wireframe: true,
   });
@@ -266,11 +266,11 @@ if (window.gsap) {
 
   const coreGeo = new THREE.IcosahedronGeometry(0.9, 1);
   const coreMat = new THREE.MeshStandardMaterial({
-    color: 0x6f9270,
+    color: 0x4f7a52,
     roughness: 0.4,
-    metalness: 0.2,
+    metalness: 0.1,
     transparent: true,
-    opacity: 0.5,
+    opacity: 0.45,
   });
   const core = new THREE.Mesh(coreGeo, coreMat);
   scene.add(core);
